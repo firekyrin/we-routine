@@ -1,0 +1,34 @@
+<view class="container">
+    <view class="head">
+        <view class="title">我的标题</view>
+        <view class="desc">我的标题描述</view>
+    </view>
+
+    <view class="menu-list">
+        <block wx:for="{{menuList}}" wx:for-item="menuItem">
+            <view class="menu-item">
+                <block wx:if="{{index >= 0 && index < 3}}">
+                    <view class="menu-item-main" id="{{index}}" bindtap="tapMenuItem">
+                        <view class="menu-item-left">
+                            <image class="menu-item-avatar" src="{{menuItem.avatar}}"></image>
+                            <view class="menu-item-head">
+                                <text class="menu-item-name">{{menuItem.name}}</text>
+                                <text class="menu-item-identity">{{menuItem.id}}</text>
+                            </view>
+                        </view>
+                        <image class="menu-item-arrow" src="/image/arrowright.png"></image>
+                    </view>
+                </block>
+                <block wx:if="{{index >= 3}}">
+                    <view class="menu-item-main" id="{{index}}" bindtap="tapMenuItem">
+                    <view class="menu-item-left">
+                        <image class="menu-item-avatar" src="{{menuItem.avatar}}"></image>
+                        <text class="menu-item-name">{{menuItem.name}}</text>
+                    </view>
+                    <image class="menu-item-arrow" src="/image/arrowright.png"></image>
+                </view>
+                </block>
+            </view>
+        </block>
+    </view>
+</view>

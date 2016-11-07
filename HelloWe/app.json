@@ -1,14 +1,18 @@
 {
   "pages":[
+    "pages/API/index/index",
+    "pages/component/index",
+    "pages/API/demo/demo",
+    "pages/component/me/me",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/component/index"
+    "pages/component/personal-infomation/personal-infomation"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "HelloWe Demo程序",
-    "navigationBarTextStyle":"#fbf9fe"
+    "navigationBarTextStyle":"red"
   },
   "tabBar": {
     "color": "#dddddd",
@@ -23,10 +27,22 @@
         "text": "小组建"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/API/index/index",
         "iconPath": "image/icon_API.png",
         "selectedIconPath": "image/icon_API_HL.png",
         "text": "接口"
+      },
+      {
+        "pagePath": "pages/API/demo/demo",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "Demo"
+      },
+      {
+        "pagePath": "pages/component/me/me",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "我"
       }
     ]
   },

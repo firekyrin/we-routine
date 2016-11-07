@@ -61,3 +61,38 @@
     border-top: 1px solid #d8d8d8;
 }
 
+.menu-item-api-list.close {
+    display: none;
+    height: 0;
+}
+
+.menu-item-api-item {
+    display: flex;
+    justify-content: space-between;
+    height: 80rpx;
+    padding: 20rpx 20rpx 20rpx 0;
+    margin-left: 40rpx;
+    align-items: center;
+    border-top: 1px solid #f0f0f0;
+}
+
+.menu-item-api-item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.menu-item-api-item-text-zhname {
+    font-size: 30rpx;
+}
+
+.menu-item-api-item-text-enname {
+    font-size: 26rpx;
+    color: #6b6b6b;
+}
+
+.menu-item-api-item-arrow {
+    width: 32rpx;
+    height: 32rpx;
+}
